@@ -1,0 +1,30 @@
+name: data_logger_app
+description: A simple app to log sensor data for ML training.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # For accessing accelerometer and gyroscope
+  sensors_plus: ^4.0.2
+  
+  # For finding the correct directory to save files
+  path_provider: ^2.1.1
+  
+  # For converting lists of data into CSV format
+  csv: ^5.1.1
+  
+  # For handling runtime permissions (like storage access)
+  permission_handler: ^11.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
